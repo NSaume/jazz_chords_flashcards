@@ -1,3 +1,11 @@
+"""
+jazz_chords_flashcards
+
+A minimal terminal-based flashcard tool for practising jazz chords.
+The script generates random chord symbols and prints them to the console.
+Intended for practice of quickly recognising common jazz chords.
+"""
+import sys
 import random
 from time import sleep
 
@@ -7,7 +15,7 @@ flat_sharp = ("", "♭", "♯")
 mod = ("⁷", "ᵐᵃʲ⁷")
 
 def select_card():
-    '''Selects a random key'''
+    """Selects a random key"""
     key = random.choice(keys)
     m_m = random.choice(maj_min)
     f_s = random.choice(flat_sharp)
@@ -26,18 +34,20 @@ class Setting:
         self.val = None
 
     def set_explainer(self, exp_text):
+        """Sets the explanation that is displayed when get_val is prompted."""
         self.explainer = exp_text
 
     def get_val(self):
+        """Prompt the user for a numeric value and store it in self.val."""
         while True:
             self.val = input(self.explainer)
             if str(self.val) == "exit":
-                exit()
+                sys.exit()
             try:
                 self.val = float(self.val)
                 break
-            except:
-                print("Please enter a number (integer or float), or type \"exit\" to leave.")
+            except ValueError:
+                print("Enter a number (integer or float), or type \"exit\" to leave.")
 
 wait = Setting()
 wait.set_explainer("Time between flashcards: ")
@@ -53,4 +63,3 @@ while n < counter.val:
     print(select_card())
     n += 1
     sleep(wait.val)
-
