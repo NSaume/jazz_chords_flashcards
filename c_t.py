@@ -57,7 +57,11 @@ counter.set_explainer("Total number of Flashcards: ")
 counter.get_val()
 
 n = 0
-sleep(wait.val)
+for i in [3, 2, 1]:
+    sleep(2)
+    print(str(i) + "...")
+
+sleep(2)
 while n < counter.val:
     print(select_card())
     n += 1
