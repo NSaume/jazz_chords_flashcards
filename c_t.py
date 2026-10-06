@@ -1,8 +1,6 @@
 import random
 from time import sleep
 
-languages = ("ger", "eng")
-
 keys = ("c", "d", "e", "f", "g", "a", "b")
 maj_min = ("maj", "min")
 flat_sharp = ("", "♭", "♯")
