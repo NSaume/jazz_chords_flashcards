@@ -13,7 +13,7 @@ Intended for practice of quickly recognising common jazz chords.
 3. Type in the time you want to have to play the chord on each flashcard.
 4. Tpye in the total number of flashcards you want to play.
 
-To quit out during (4.) and (5.), type "exit".
+To quit out during (3.) and (4.), type "exit".
 
 ## Planned Features
 
