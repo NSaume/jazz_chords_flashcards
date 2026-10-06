@@ -1,8 +1,8 @@
 # jazz_chords_flashcards
 
-A minimal terminal-based flashcard tool for practising jazz chords.
+A minimal terminal-based flashcard tool to practice quickly recognizing and playing jazz chords.
 The script generates random chord symbols and prints them to the console.
-Intended for practice of quickly recognising common jazz chords.
+Currently generates major sevent, dominant seventh, and minor seventh chords.
 
 ## Use
 1. Download c_t.py
@@ -10,8 +10,8 @@ Intended for practice of quickly recognising common jazz chords.
 ```bash
    python c_t.py
 ```
-3. Type in the time you want to have to play the chord on each flashcard.
-4. Tpye in the total number of flashcards you want to play.
+3. Type in the time (int or float) you want to have to play the chord on each flashcard when prompted.
+4. Type in the total number (int or float) of flashcards you want to play.
 
 To quit out during (3.) and (4.), type "exit".
 
